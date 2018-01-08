@@ -41,9 +41,9 @@ int main(){
 		scanf("%f",&size[i]);
 		printf("Enter value : ");
 		scanf("%f", &value[i]);
-		
+
 	}
-	printf("\nEnter total capacity of bag : ");
+	printf("\nEnter total cpcity of bag : ");
 	scanf("%f", &capacity);
 	for(int i=0;i<n;i++){
 		ratio[i] = value[i]/size[i];
@@ -56,7 +56,7 @@ int main(){
 				temp = ratio[j];
 				ratio[j] = ratio[j+1];
 				ratio[j+1] = temp;
-				
+
 				temp = size[j];
 				size[j] = size[j+1];
 				size[j+1] = temp;
@@ -72,4 +72,3 @@ int main(){
 
 	KS(n-1,size,value,capacity);
 }
-
